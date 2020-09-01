@@ -1,0 +1,68 @@
+"Games"
+{
+    "csgo"
+    {
+        "Functions"
+        {
+            "IServerPluginCallbacks::OnEdictAllocated"
+            {
+                "offset" "IServerPluginCallbacks::OnEdictAllocated"
+                "hooktype" "raw"
+                "return" "void"
+                "this" "ignore"
+                "arguments"
+                {
+                    "edict"
+                    {
+                        "type" "edict"
+                    }
+                }
+            }
+            
+            "IServerPluginCallbacks::OnEdictFreed"
+            {
+                "offset" "IServerPluginCallbacks::OnEdictFreed"
+                "hooktype" "raw"
+                "return" "void"
+                "this" "ignore"
+                "arguments"
+                {
+                    "edict"
+                    {
+                        "type" "edict"
+                    }
+                }
+            }
+        }
+        
+        "Keys"
+        {
+            "ServerPluginInterface" "ISERVERPLUGINHELPERS001"
+        }
+        
+        "Offsets"
+        {
+            "IServerPluginCallbacks::OnEdictAllocated"
+            {
+                "windows" "17"
+                "linux" "17"
+            }
+        
+            "IServerPluginCallbacks::OnEdictFreed"
+            {
+                "windows" "18"
+                "linux" "18"
+            }
+        }
+        
+        "Signatures"
+        {
+            "CreateInterface"
+            {
+                "library" "engine"
+                "windows" "@CreateInterface"
+                "linux" "@CreateInterface"
+            }
+        }
+    }
+}
